@@ -1,18 +1,23 @@
 package edu.funtec.arvore;
+
+//tipo generico e o comparable
 public class BinNo<T extends Comparable<T>> {
 
-    private T conteudo;
+   
+	//referncias no esquerda e nó direita
+	private T conteudo;
     private BinNo<T> noEsq;
     private BinNo<T> noDir;
 
     public BinNo(T conteudo) {
         this.conteudo = conteudo;
-        noEsq = noDir = null;
+        noEsq = noDir = null;//os dois nó começam com nulo
     }
 
-    public BinNo() {
+    public BinNo() {//constutor simples
     }
 
+    //metodos get
     public T getConteudo() {
         return conteudo;
     }
@@ -37,7 +42,7 @@ public class BinNo<T extends Comparable<T>> {
         this.noDir = noDir;
     }
 
-    @Override
+    @Override //tostring
     public String toString() {
         return "BinNo{" +
                 "conteudo=" + conteudo +

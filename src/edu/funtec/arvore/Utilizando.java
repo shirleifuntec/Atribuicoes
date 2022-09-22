@@ -1,6 +1,8 @@
 package edu.funtec.arvore;
 
-public class Main {
+import edu.funtec.arvore.model.Obj;
+
+public class Utilizando {
 
     public static void main(String[] args){
 
